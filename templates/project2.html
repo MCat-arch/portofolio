@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Full Image */
+.full-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image Slider */
+.image-slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.image-slider img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Project Description */
+.project-description {
+    padding: 20px;
+}
+
+.project-description h2 {
+    margin-top: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project 1 Details</h1>
+    </header>
+    <main>
+        <div class="full-image">
+            <img src="assets/siPink.png" alt="Project 1 Full Image">
+        </div>
+        <div class="image-slider">
+            <img src="assets/siPink.png" alt="Preview 1">
+            <img src="assets/qz.png" alt="Preview 2">
+            <img src="assets/siPink-3.png" alt="Preview 3">
+        </div>
+        <div class="project-description">
+            <h2>Project 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quae.</p>
+            <!-- Add more detailed description here -->
+        </div>
+    </main>
+
+    <script>
+        // Example JavaScript for the image slider (optional)
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.image-slider');
+    // Add any JavaScript functionality here if needed
+});
+
+    </script>
+</body>
+</html>
