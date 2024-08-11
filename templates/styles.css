@@ -168,7 +168,6 @@
     gap: 1.5rem;
   }
   .btn-group a:nth-of-type(2){
-    background-color: black;
     color: var(--text-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
@@ -435,11 +434,7 @@
 }
 
 
-  .heading{
-    font-size: 8rem;
-    text-align: center;
-    margin: 5rem 0;
-  }
+  
   .education{
     padding: 100px 15px;
     background-color: var(--second-bg-color);
@@ -540,11 +535,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 3em;
   flex-direction: column;
 }
 .projects .heading{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5rem;
   margin-bottom: 7rem;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
 }
 .projects-box img{
   width: 15rem;
@@ -594,6 +592,7 @@
 .projects-item .btn:hover{
   display: inline-block;
   background: var(--text-color);
+  color: whitesmoke;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -604,6 +603,10 @@
     background: var(--bg-color);
   }
   .contact h2{
+
+    font-size: 5rem;
+    text-align: center;
+    margin: auto;
     margin-bottom: 3rem;
     color: white;
   }
