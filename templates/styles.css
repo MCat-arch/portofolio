@@ -23,11 +23,11 @@
     color: var(--text-color);
   }
   .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 2rem 12% 2rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -124,6 +124,7 @@
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
+    text-align: justify;
   }
   .social-icons a{
     display: inline-flex;
@@ -207,20 +208,8 @@
   }
   @keyframes words{
     0%,
-    25%{
-      content: "Web Developer";
-    }
-    26%,
-    50%{
-      content: "Web Designer";
-    }
-    51%,
-    75%{
-      content: "UI/UX Designer";
-    }
-    76%,
     100%{
-      content: "College Student";
+      content: "Web Developer";
     }
   }
   @keyframes typing{
@@ -323,8 +312,10 @@
     width: 770%;
     padding: 3rem;
     border-radius: 8px;
-    color: #b9b3b3; /* White text for contrast */
+    color: #dedee1; /* White text for contrast */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a 3D effect */
+    justify-content: center;
+    align-items: center;
   }
   
   .skills-section {
@@ -467,6 +458,9 @@
 
   .skillsheet {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
   }
 }
 
@@ -497,6 +491,12 @@
   .about-content p {
     font-size: 1em; /* Further reduce font size */
     margin-bottom: 5px;
+  }
+
+  .skillsheet{
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
   }
 }
 
