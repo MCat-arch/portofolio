@@ -16,28 +16,25 @@
 
 <body>
   <header class="header">
-    <a href="#home" class="logo">Khoerunnisa <span>Utami</span></a>
+    <div class="navbar">
+      <div class="nav-start-container">
+    <span class="navbar-start">Khoerunnisa <span>Utami</span></a>
+      </div>
+    <div class="nav-end-container">
+    <span class="navbar-end" id="navbar-section">Home</span>
+    </div>
 
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#education">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    </div>
   </header>
 
   <section class="home" id="home">
     <div class="home-content">
-      <h1>Hi, I'm <span>Nisa</span></h1>
+      <h1>Hi, I'm <span>Tami</span></h1>
       <h3 class="text-animation">I'm a <span></span></h3>
-      <p>Always excited to dive into the magical world of programming, especially the web development.<br>
+      <p>Always excited to dive into the magical world of programming, especially software development.<br>
         You can get to know me here. Also you can catch me up on one of these social media, and that surely would be great!.  
         I'll see you there
       </p>
-
-
 
       <div class="social-icons">
         <a href="https://www.instagram.com/khoerunis9/profilecard/?igsh=MWt4YzY1dWsxeDBtaw=="><i class='bx bxl-instagram-alt'></i></a>
@@ -55,14 +52,11 @@
 
   </section>
 
-  <div class="about" id="about">
+  <section class="about" id="about">
     <div class="about-content">
-      <h2 class="title-abm">About Me</h2>
       <div class="about-wrapper">
         <div class="about-text">
-          <div class="img">
-            <img src="assets/me.jpg" alt="About Me Photo" id="img-profil">
-          </div>
+         
           <p>
             Hi there! My name is Khoerunnisa Utami, you can call me Tami though. My passion for tech span accros various domain including website and software development, system analyst, and artificial intelligence.
           </p>
@@ -75,106 +69,225 @@
           <p>
             Despite my limited experience, I bring a fresh perspective, a willingness to tackle challenges head-on, and a relentless drive to succeed. I am excited about the potential to learn, grow, and make meaningful contributions to the community and beyond.
           </p>
+          <ul class="skills-list">
+        <li>React</li>
+        <li>Node.Js</li>
+        <li>Flutter</li>
+        <li>Bootstrap</li>
+        <li>MySQL</li>
+      </ul>
         </div>
-  
-        <div class="skillsheet">
-          <h3>Skills</h3>
-  
-          <div class="skills-section">
-            <div class="skill-category">
-              <h4>Frontend</h4>
-              <ul>
-                <li><i class="fab fa-react"></i> React JS</li>
-                <li><i class="fab fa-bootstrap"></i> Bootstrap 5</li>
-                <li><i class="fab fa-html5"></i> HTML & CSS</li>
-              </ul>
-            </div>
-  
-            <div class="skill-category">
-              <h4>Backend</h4>
-              <ul>
-                <li><i class="fab fa-python"></i> Django</li>
-                <li><i class="fab fa-js"></i> Express JS</li>
-                <li><i class="fab fa-php"></i> PHP</li>
-              </ul>
-            </div>
-  
-            <div class="skill-category">
-              <h4>General</h4>
-              <ul>
-                <li><i class="fab fa-cplusplus"></i> C++</li>
-                <li><i class="fab fa-python"></i> Python</li>
-                <li><i class="fab fa-js-square"></i> JavaScript</li>
-              </ul>
-            </div>
+        <div class="about-pic">
+         <div class="pic-wrapper">
+            <img src="assets/me.jpg" alt="About Me Photo" id="img-profil" class="img">
           </div>
-        </div>
-  
+        </div>  
       </div>
     </div>
-  </div>
-  
+  </section>
 
-  <section class="projects" id="projects">
-    <div class="projects-box">
-      <h2 class="heading">Project</h2>
-      <div class="wrapper">
-        
-        <!-- Project 1 -->
-        <div class="projects-item">
-          <h3>Si Pink</h3>
-          <img src="assets/siPink.png" alt="">
-          <p>Sebuah Sistem Pengaduan Infrastruktur yang dibuat untuk mengikuti challenge dari dicoding </p>
-          <a href="project1.html" class="btn">Read More</a>
-        </div>
-  
-        <!-- Project 2 -->
-        <div class="projects-item">
-          <h3>letS-ketch</h3>
-          <img src="assets/Desktop1.jpg" alt="">
-          <p>Halaman website yang dapat digunakan untuk membuat sketching serta dapat langsung membagikan hasilnya</p>
-          <a href="project2.html" class="btn">Read More</a>
-        </div>
-        
-        <!-- Project 3 -->
-        <div class="projects-item">
-          <h3>Qz</h3>
-          <img src="assets/qz.png" alt="">
-          <p>Ini adalah website kuis yang dibuat dengan JavaScript dan Bootstrap 5</p>
-          <a href="project3.html" class="btn">Read More</a>
-        </div>
-  
-        <!-- Project 4 (hidden initially) -->
-        <div class="projects-item hidden">
-          <h3>Qz</h3>
-          <img src="assets/pos.png" alt="">
-          <p>Pos management and inventory is a localhost website to manage product from kutoarjogrosir shop</p>
-          <a href="project4.html" class="btn">Read More</a>
-        </div>
-  
-
-        <!-- Project 6 (hidden initially) -->
-        <div class="projects-item hidden">
-          <h3>Qz</h3>
-          <img src="assets/project6/1.png" alt="">
-          <p>This project is aimed to display materials product and its stock from UD Tri Sakti shop.</p>
-          <a href="project6.html" class="btn">Read More</a>
-        </div>
-        
+  <section class="experience" id="experience">
+    <div class="experience-container">
+      <div class="experience-tabs">
+        <button class="exp-tab active" data-tab="exp1">University</button>
+         <button class="exp-tab" data-tab="exp2">Works</button>
+      <button class="exp-tab" data-tab="exp3">Certification</button>
       </div>
-  
-      <!-- Navigation buttons -->
-      <div class="project-nav">
-        <button id="prev-btn" class="btn"><</button>
-        <button id="next-btn" class="btn">></button>
+      <div class="experience-content">
+        <div class="exp-panel" id="exp1" style="display:block;">
+        <h3>Universitas Negeri Surabaya</h3>
+        <p class="exp-range">2023 &ndash; Informatics Engineering</p>
+        <div class="exp-role">
+        <h4>Information System Lab Assistant
+        <span class="exp-year">2025</span></h4>
+        <ul>
+          <li>Managed and organized laboratory resources to ensure a conducive learning environment</li>
+          <li>Supported students in practical sessions, facilitating hands-on learning in information systems.</li>
+        </ul>
+        </div>
+        <div class="exp-role">
+        <h4>SLP Community &mdash; Mobile Development Core Team <span class="exp-year">2024 &ndash; 2025</span></h4>
+        <ul>
+          <li>Developed structured learning paths for mobile development training sessions</li>
+          <li>Designed comprehensive training modules, materials, and hands-on projects to enhance participant skills</li>
+          <li>Delivered flutter mobile development training sessions</li>
+        </ul>
+        </div>
+        <div class="exp-role">
+        <h4>Asisten Praktikum &mdash; Basic Programming & Data Structure<span class="exp-year">2024 &ndash; 2025</span></h4>
+        <ul>
+          <li>Designed case studies and practical exercises for data structures to reinforce theoretical learning.</li>
+          <li>Created learning modules for basic programming practicum to support student comprehension.</li>
+          <li>Evaluated student progress, providing constructive feedback to improve understanding and performance.</li>
+        </ul>
+        </div>
+
+      </div>
+      <div class="exp-panel" id="exp2" style="display:none;">
+        <h3>Works</h3>
+        <!-- <p>Intern at ABC Tech<br>2022<br>Frontend Developer</p>
+        <ul>
+          <li>Developed landing pages</li>
+          <li>Collaborated with backend team</li>
+        </ul> -->
+      </div>
+      <div class="exp-panel" id="exp3" style="display:none;">
+        <h3>Certification</h3>
+        <ul>
+          <li><strong>2024</strong>
+          <ul>
+          <li>Dicoding : Belajar Membuat Frontend Web</li>
+          <li>Dicoding : Belajar Dasar Pemrograman Web</li>
+          <li>SBI Hacker Software 2024 : Flutter </li>
+          <li>Markas Surabaya : Building With React</li>
+          </li>
+          </ul>
+          <li><strong>2025</strong>
+          <ul>
+          <li>Bootcamp LLM Digiclub & Dunia Coding</li>
+          <li>SBI Hacker Software 2025 : Kotlin</li>
+          </ul>
+          </li>
+        </ul>
+      </div>
       </div>
     </div>
   </section>
   
-  
 
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
+   
+<section class="projects" id="projects">
+  <div class="projects-carousel">
+  <div class="projects-slider" id="projects-slider">
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/Dimasbro12/frontend-Collabify" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://frontend-collabify.vercel.app/" target="_blank" aria-label="External"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title">Colabify</h3>
+      <img class="img" src="assets/project1/colabify.png" alt="">
+      <p class="project-description">Website Chat Real time  yang memungkinkan komunikasi antar user atau group chat dengan websocket dan fitur AI LLM Chatbot</p>
+      <ul class="project-tech-list">
+        <li>React</li>
+        <li>Tailwind</li>
+        <li>Express.js</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/POS" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title">POS KutoarjoGrosir</h3>
+      <img class="img" src="assets/project2/pos.png" alt="">
+      <p class="project-description">Website Sistem POS dengan fitur pelacakan dan manajemen stok/inventory untuk UMKM KutoarjoGrosir </p>
+      <ul class="project-tech-list">
+        <li>PHP</li>
+        <li>Bootstrap</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/battleCard/tree/main" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title">BattleCard Game</h3>
+      <img class="img" src="assets/Battle.png" alt="">
+      <p class="project-description">Game desktop pertarungan kartu antara player dengan player dalam satu device (untuk saat ini). Developed using pygame</p>
+      <ul class="project-tech-list">
+        <li>pygame</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/learning-tracker-21-react_ion-" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://21reaction.vercel.app/" target="_blank" aria-label="External"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title">Learning Tracker</h3>
+      <img class="img" src="assets/learningTracker.png" alt="">
+      <p class="project-description">Website untuk melacak progress belajar (react js) dengan 3 fitur utama yaitu penyelesaian progres belajar, notes, dan sources (untuk menyimpan sumber belajar yang bermanfaat)</p>
+      <ul class="project-tech-list">
+        <li>React</li>
+        <li>Next.Js</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/siPink" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title"><a href="#">siPink</a></h3>
+      <img class="img" src="assets/siPink.png" alt="">
+      <p class="project-description">Website pengaduan sistem infrastruktur Kebumen. Dibuat untuk mengikuti challenge Baparekraf Digital Talent 2024</p>
+      <ul class="project-tech-list">
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>Bootstrap</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/nalarwiratama" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title"><a href="">NalarWiratama</a></h3>
+      <p class="project-description">Aplikasi pembelajaran logika matematika berbasis story game dengan tema cerita perang diponegoro. Dilengkapi fitur AI Chatbot yang bisa membantu meningkatkan pemahaman pengguna terkait materi logika matematika</p>
+      <ul class="project-tech-list">
+        <li>Flutter</li>
+        <li>OpenRouter API</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/ScrewIT" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title"><a href="">Emo</a></h3>
+      <p class="project-description">Aplikasi yang dapat menyimpan notes dari pengguna berdasarkan emosi pengguna saat ini. Terinspirasi dari inside out 2</p>
+      <ul class="project-tech-list">
+        <li>React Native</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <div class="project-top">
+        <span class="folder"><i class="fas fa-folder"></i></span>
+        <div class="project-links">
+          <a href="https://github.com/MCat-arch/project5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <h3 class="project-title"><a href="">ToDo</a></h3>
+      <p class="project-description">Aplikasi todo dengan fitur notifikasi dan reminder serta autentikasi pengguna</p>
+      <ul class="project-tech-list">
+        <li>Flutter</li>
+        <li>Firebase</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</section>
+  
+<section class="contact" id="contact">
 
     <form action="">
       <div class="input-group">
@@ -203,16 +316,8 @@
       <a href="#"><i class='bx bxl-linkedin-square'></i></a>
       <a href="#"><i class='bx bxl-discord-alt'></i></a>
     </div>
-  <ul class="list">
-    <li>
-      <a href="#">About</a>
-    </li>
-    <li>
-      <a href="#">Contact</a>
-    </li> 
-  </ul>
     <p class="copyright">
-     2023 © Khoerunnisa Utami | All right reserved
+     2023 © Khoerunnisa Utami || Made With ❤
   </footer>
   
   <script src="script.js"></script>
