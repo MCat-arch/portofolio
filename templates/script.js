@@ -1,69 +1,51 @@
-let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('.navbar')
-// // let sections = document.querySelectorAll('section');
-// let navlinks = document.querySelectorAll('header nav a');
 
-// window.onscroll = () =>{
-//   sections.forEach(sec =>{
-//     let top= window.scrollY;
-//     let offset = sec.offsetTop - 150;
-//     let height = sec.offsetHeight;
-//     let id = sec.getAttribute('id');
+let btn_right = document.getElementById('btn-slider-right');
+let btn_left = document.getElementById('btn-slider-left')
 
-//     if(top >= offset && top < offset + height){
-//       navlinks.forEach(Links => {
-//         Links.classList.remove('active');
-//         document.querySelector('header nav a [href* =' + id + ']').classList.add('active')
-        
-//       })
-//     }
-//   })
-// }
+const textElement = document.querySelector('.text-type');
+const texts = ["Web Developer", "Mobile Developer", "Agentic AI Developer"];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentText = texts[textIndex];
+  if (isDeleting) {
+    textElement.textContent = currentText.substring(0, charIndex--);
+    if (charIndex < 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+  } else {
+    textElement.textContent = currentText.substring(0, charIndex++);
+    if (charIndex > currentText.length) {
+      isDeleting = true;
+      setTimeout(() => {}, 1000); // Jeda sebelum menghapus
+    }
+  }
+
+  const typingSpeed = isDeleting ? 50 : 100;
+  setTimeout(type, typingSpeed);
+}
+
+function addCursor() {
+  const cursor = document.createElement('span');
+  cursor.classList.add('cursor');
+  textElement.parentElement.appendChild(cursor);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  addCursor();
+  type();
+});
 
 
-// menuIcon.onclick = () => {
-//   menuIcon.classList.toggle('bx-x');
-//   navbar.classList.toggle('active');
-// }
+const menuIcon = document.querySelector('#menu-icon');
+  const navEndContainer = document.querySelector('.nav-end-container');
 
-
-// // JavaScript for navigation
-// const projects = document.querySelectorAll('.projects-item');
-// const prevBtn = document.getElementById('prev-btn');
-// const nextBtn = document.getElementById('next-btn');
-
-// let currentSlide = 0;
-// const totalProjects = projects.length;
-// const projectsPerPage = 3;
-
-// // Show the first 3 projects initially
-// function showProjects(start) {
-//   projects.forEach((project, index) => {
-//     project.classList.add('hidden');
-//     if (index >= start && index < start + projectsPerPage) {
-//       project.classList.remove('hidden');
-//     }
-//   });
-// }
-
-// // Initially show the first 3 projects
-// showProjects(currentSlide);
-
-// // Next button functionality
-// nextBtn.addEventListener('click', () => {
-//   if (currentSlide + projectsPerPage < totalProjects) {
-//     currentSlide += projectsPerPage;
-//     showProjects(currentSlide);
-//   }
-// });
-
-// // Previous button functionality
-// prevBtn.addEventListener('click', () => {
-//   if (currentSlide - projectsPerPage >= 0) {
-//     currentSlide -= projectsPerPage;
-//     showProjects(currentSlide);
-//   }
-// });
+  menuIcon.addEventListener('click', () => {
+    navEndContainer.classList.toggle('active');
+  });
 
   // Tab switching logic
   document.querySelectorAll('.exp-tab').forEach(btn => {
@@ -137,13 +119,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   showSlide(currentSlide);
 
-  setInterval(() => {
+  function nextSlide () {
     updateGrid();
     perSlide = col * row;
     totalSlides = Math.ceil(total / perSlide);
     currentSlide = (currentSlide + 1) % totalSlides;
     showSlide(currentSlide);
-  }, 3500);
+  };
+
+  function prevSlide (){
+    updateGrid(),
+    perSlide = col*row;
+    totalSlides = Math.ceil(total/perSlide);
+    currentSlide = (currentSlide+1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  btn_right.addEventListener('click', nextSlide);
+  btn_left.addEventListener('click', prevSlide);
 
   window.addEventListener('resize', () => {
     updateGrid();

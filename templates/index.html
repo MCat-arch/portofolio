@@ -16,21 +16,23 @@
 
 <body>
   <header class="header">
-    <div class="navbar">
-      <div class="nav-start-container">
-    <span class="navbar-start">Khoerunnisa <span>Utami</span></a>
-      </div>
+  <div class="navbar">
+    <div class="nav-start-container">
+      <a href="#" class="navbar-start">Khoerunnisa <span>Utami</span></a>
+    </div>
+    <span id="menu-icon">&#9776;</span> <!-- Hamburger icon (Unicode) -->
     <div class="nav-end-container">
-    <span class="navbar-end" id="navbar-section">Home</span>
+      <a href="#home" class="navbar-end" id="navbar-section">Home</a>
+      <!-- Tambahkan item navigasi lain jika perlu -->
+      <!-- Contoh: <a href="#about" class="navbar-end">About</a> -->
     </div>
-
-    </div>
-  </header>
+  </div>
+</header>
 
   <section class="home" id="home">
     <div class="home-content">
       <h1>Hi, I'm <span>Tami</span></h1>
-      <h3 class="text-animation">I'm a <span></span></h3>
+      <h3 class="text-animation">I'm a <span class="text-type"></span></h3>
       <p>Always excited to dive into the magical world of programming, especially software development.<br>
         You can get to know me here. Also you can catch me up on one of these social media, and that surely would be great!.  
         I'll see you there
@@ -58,21 +60,22 @@
         <div class="about-text">
          
           <p>
-            Hi there! My name is Khoerunnisa Utami, you can call me Tami though. My passion for tech span accros various domain including website and software development, system analyst, and artificial intelligence.
+            Hi there! I'm Khoerunnisa Utami — but feel free to call me Tami. I'm deeply passionate about technology, with interests spanning across web and mobile development, data analysis, and the growing world of artificial intelligence.
           </p>
           <p>
-            My journey in the world of programming and web development began with a curiosity to understand how things work behind the scenes. This curiosity quickly evolved into a passion for creating, problem-solving, and constantly pushing the boundaries of my knowledge.
+            My journey into programming and development started with a simple curiosity: how do things work behind the scenes? That curiosity quickly turned into a passion for building, solving real-world problems, and exploring new innovations in tech.
           </p>
           <p>
-            Joining the right community is what i always be my first list. I believe with the right environment will not only help me refine my skills but also allow me to collaborate with like-minded individuals, learn from seasoned experts, and contribute to exciting projects.
+            I’ve always believed that the right community makes all the difference. Surrounding myself with people who share the same energy and drive allows me to grow faster, learn better, and contribute more meaningfully. I'm always on the lookout for spaces where collaboration thrives and knowledge flows.
           </p>
           <p>
-            Despite my limited experience, I bring a fresh perspective, a willingness to tackle challenges head-on, and a relentless drive to succeed. I am excited about the potential to learn, grow, and make meaningful contributions to the community and beyond.
+            While I may still be early in my career, I bring a strong desire to learn, and an eagerness to take on challenges head-first. I'm excited about what lies ahead — not just for me, but for the impact I hope to make within the tech community and beyond.
           </p>
+
           <ul class="skills-list">
-        <li>React</li>
+        <li><i class='bx  bx-burst'>React</i></li>
+        <li><i class='bx  bx-burst'>Flutter</i></li>
         <li>Node.Js</li>
-        <li>Flutter</li>
         <li>Bootstrap</li>
         <li>MySQL</li>
       </ul>
@@ -125,30 +128,25 @@
       </div>
       <div class="exp-panel" id="exp2" style="display:none;">
         <h3>Works</h3>
-        <!-- <p>Intern at ABC Tech<br>2022<br>Frontend Developer</p>
-        <ul>
-          <li>Developed landing pages</li>
-          <li>Collaborated with backend team</li>
-        </ul> -->
       </div>
       <div class="exp-panel" id="exp3" style="display:none;">
-        <h3>Certification</h3>
-        <ul>
-          <li><strong>2024</strong>
+      <h3>Certification</h3>
+        <div class="exp-role">
+          <h4>2024</h4>
           <ul>
-          <li>Dicoding : Belajar Membuat Frontend Web</li>
-          <li>Dicoding : Belajar Dasar Pemrograman Web</li>
-          <li>SBI Hacker Software 2024 : Flutter </li>
-          <li>Markas Surabaya : Building With React</li>
-          </li>
+            <li><strong>Dicoding</strong> : Belajar Membuat Frontend Web</li>
+            <li><strong>Dicoding</strong> : Belajar Dasar Pemrograman Web</li>
+            <li><strong>SBI Hacker Software 2024</strong> : Flutter</li>
+            <li><strong>Markas Surabaya</strong> : Building With React</li>
           </ul>
-          <li><strong>2025</strong>
+        </div>
+        <div class="exp-role">
+          <h4>2025</h4>
           <ul>
-          <li>Bootcamp LLM Digiclub & Dunia Coding</li>
-          <li>SBI Hacker Software 2025 : Kotlin</li>
+            <li><strong>Bootcamp LLM Digiclub & Dunia Coding</strong></li>
+            <li><strong>SBI Hacker Software 2025 : Kotlin</strong></li>
           </ul>
-          </li>
-        </ul>
+        </div>
       </div>
       </div>
     </div>
@@ -273,7 +271,7 @@
       <div class="project-top">
         <span class="folder"><i class="fas fa-folder"></i></span>
         <div class="project-links">
-          <a href="https://github.com/MCat-arch/project5" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/MCat-arch/todo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
       <h3 class="project-title"><a href="">ToDo</a></h3>
@@ -284,6 +282,10 @@
       </ul>
     </div>
     </div>
+  </div>
+  <div class="btn-container">
+  <div class="btn-slider" id="btn-slider-right"><i class='bx bx-caret-right-circle'></i></div>
+  <div class="btn-slider" id="btn-slider-left"><i class='bx bx-caret-left-circle bx-fade-left' ></i></div>
   </div>
 </section>
   
@@ -311,10 +313,10 @@
 
   <footer class="footer">
     <div class="social">
-      <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-      <a href="#"><i class='bx bxl-github'></i></a>
-      <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-      <a href="#"><i class='bx bxl-discord-alt'></i></a>
+        <a href="https://www.instagram.com/khoerunis9/profilecard/?igsh=MWt4YzY1dWsxeDBtaw=="><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://github.com/MCat-arch"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/khoerunnisa-utami-853217295?trk=contact-info"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="#contact"><i class='bx bxl-discord-alt'></i></a>
     </div>
     <p class="copyright">
      2023 © Khoerunnisa Utami || Made With ❤
